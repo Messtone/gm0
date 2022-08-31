@@ -44,7 +44,7 @@ All REV hub DC motors are instances of ``DcMotorEx``, which exposes some more me
 Tips
 ~~~~
 
-- While current readings are not bulk read, current alerts (``isMotorOverCurrent()``) is bulk read.
+- While current b readings are not bulk read, current alerts (``isMotorOverCurrent()``) is bulk read.
 - PID/PIDF coefficients use internal units for the output, a two byte short from -32767 to 32767, instead of the user -1 to 1.
 - The default ``getVelocity()`` method returns the encoder velocity in ticks per second.
 - The ``RunMode`` ``STOP_AND_RESET_ENCODERS`` is not actually a run mode. Instead, it just sets the power to zero and sends a ``LynxResetMotorEncoderCommand``. This command can be issued manually if one wants to easy reset a motor encoder without changing the run mode.
